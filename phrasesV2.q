@@ -6,7 +6,6 @@
 /-----------------------------------------------------------------------------
 / Arrays and Windows
 /-----------------------------------------------------------------------------
-
 / 149 running maximum
 maxs x
 
@@ -46,7 +45,6 @@ reverse maxs reverse x
 /-----------------------------------------------------------------------------
 / Searching
 /-----------------------------------------------------------------------------
-
 / 521 last occurrence of maximum
 count[x]-1+reverse[x]?max x
 
@@ -68,7 +66,6 @@ first iasc abs x-y
 /-----------------------------------------------------------------------------
 / Statistics
 /-----------------------------------------------------------------------------
-
 / 1813 coefficient of variation
 dev[x]%avg x
 
@@ -99,7 +96,6 @@ prds 1+x
 /-----------------------------------------------------------------------------
 / Finance / Trading
 /-----------------------------------------------------------------------------
-
 / 414 simple return
 ratios x
 
@@ -139,7 +135,6 @@ sqrt n*avg[x]%dev x
 /-----------------------------------------------------------------------------
 / Time Series
 /-----------------------------------------------------------------------------
-
 / 2005 beginning of month
 month$ x
 
@@ -167,7 +162,6 @@ y-x
 /-----------------------------------------------------------------------------
 / Matrices
 /-----------------------------------------------------------------------------
-
 / 1117 trace of matrix
 sum x ./:2#'til count x
 
@@ -189,78 +183,10 @@ avg flip x
 / 1123 matrix flattened to vector
 raze x
 
-/-----------------------------------------------------------------------------
-/ Dictionaries and Tables
-/-----------------------------------------------------------------------------
-
-/ 2219 table row count
-count x
-
-/ 2220 table column count
-count cols x
-
-/ 2221 table shape
-(count x;count cols x)
-
-/ 2222 dictionary keys
-key x
-
-/ 2223 dictionary values
-value x
-
-/ 2224 flip dictionary to table
-flip x
-
-/ 2225 table to dictionary of columns
-flip x
-
-/ 2226 distinct rows
-distinct x
-
-/ 2227 first row
-first x
-
-/ 2228 last row
-last x
-
-/-----------------------------------------------------------------------------
-/ KDB+/Tick Specific
-/-----------------------------------------------------------------------------
-
-/ 2300 previous row
-prev x
-
-/ 2301 next row
-next x
-
-/ 2302 first difference
-deltas x
-
-/ 2303 ratio to previous
-ratios x
-
-/ 2304 first timestamp in table
-first x[`time]
-
-/ 2305 last timestamp in table
-last x[`time]
-
-/ 2306 table sorted by time
-`time xasc x
-
-/ 2307 table sorted descending by time
-`time xdesc x
-
-/ 2308 count by sym
-select count i by sym from x
-
-/ 2309 latest row by sym
-select by sym from `time xdesc x
 
 /-----------------------------------------------------------------------------
 / Candlestick Analytics
 /-----------------------------------------------------------------------------
-
 / 2400 candle body size
 abs x[`close]-x[`open]
 
