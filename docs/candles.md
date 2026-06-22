@@ -1,3 +1,4 @@
+```q
 / 2400 candle body size
 abs x[`close]-x[`open]
 
@@ -27,3 +28,4 @@ x[`open]<prev x[`low]
 
 / 2409 outside bars
 (x[`high]>prev x[`high])&(x[`low]<prev x[`low])
+```

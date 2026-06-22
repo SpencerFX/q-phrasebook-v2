@@ -1,3 +1,4 @@
+```q
 / 149 running maximum
 maxs x
 
@@ -33,3 +34,4 @@ reverse maxs reverse x
 
 / 160 rolling z-score of width y
 (x-y mavg x)%y mdev x
+```

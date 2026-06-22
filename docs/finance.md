@@ -1,3 +1,4 @@
+```q
 / 414 simple return
 ratios x
 
@@ -33,3 +34,4 @@ avg[x]%dev x
 
 / 425 annualized Sharpe ratio
 sqrt n*avg[x]%dev x
+```
