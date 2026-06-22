@@ -1,3 +1,4 @@
+```q
 / 521 last occurrence of maximum
 count[x]-1+reverse[x]?max x
 
@@ -15,3 +16,4 @@ first x iasc abs x-y
 
 / 526 nearest index to y
 first iasc abs x-y
+```

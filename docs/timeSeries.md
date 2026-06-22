@@ -1,3 +1,4 @@
+```q
 / 2005 beginning of month
 month$ x
 
@@ -21,3 +22,4 @@ y-x
 
 / 2012 seconds from time
 3600*hour x+60*minute x+second x
+```

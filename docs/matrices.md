@@ -1,3 +1,4 @@
+```q
 / 1117 trace of matrix
 sum x ./:2#'til count x
 
@@ -18,3 +19,4 @@ avg flip x
 
 / 1123 matrix flattened to vector
 raze x
+```

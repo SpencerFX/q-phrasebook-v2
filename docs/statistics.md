@@ -1,3 +1,4 @@
+```q
 / 1813 coefficient of variation
 dev[x]%avg x
 
@@ -24,3 +25,4 @@ prd 1+x
 
 / 1821 running cumulative return
 prds 1+x
+```
